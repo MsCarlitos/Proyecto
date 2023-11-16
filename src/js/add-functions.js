@@ -13,7 +13,7 @@ const save = () => {
         nombreProducto: nombreProducto,
         descripcionProducto: descripcionProducto,
         precioProducto: precioProducto,
-        costoProducto: costoProducto,
+        costoProducto: costoProducto
     };
 
     let productoLocal = localStorage.getItem('producto');

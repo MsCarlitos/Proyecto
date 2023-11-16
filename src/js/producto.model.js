@@ -8,4 +8,4 @@ class Producto {
 
 if (typeof window !== 'undefined') {
     window.Persona = Persona;
-  }
+}

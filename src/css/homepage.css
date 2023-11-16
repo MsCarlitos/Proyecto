@@ -1,6 +1,6 @@
 .container {
     display: flex;
-    background-color: rgb(108, 229, 248);
+    /* background-color: rgb(108, 229, 248); */
     flex-direction: column;
 }
 

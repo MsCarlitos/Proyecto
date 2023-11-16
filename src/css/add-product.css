@@ -1,27 +1,9 @@
-
 body {
-    margin: 0;
+    margin: 25px;
     font-family: Arial, sans-serif;
-    background-color: rgb(108, 229, 248);
+    /* background-color: rgb(108, 229, 248); */
 }
 
-.container {
-  display: flex;
-  padding: 20px;
-  justify-content: center;
-  align-items: center;
-}
-
-.formulario {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 80vw;
-    height: 50vh;
-}
-
-.form-control {
-    border-radius: 20px;
-    padding: 15px;
+.spacer {
     margin: 15px;
 }
