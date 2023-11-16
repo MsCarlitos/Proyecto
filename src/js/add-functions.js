@@ -19,22 +19,17 @@ const save = () => {
     let productoLocal = localStorage.getItem('producto');
 
     if(!productoLocal) {
-        localStorage.setItem('producto', [JSON.stringify(producto)]);
+        localStorage.setItem('producto', JSON.stringify([producto]));
         alert('Producto Guardado con exito.');
         return;
     }
     updateProducto(producto);
 }
 
-const updateProducto = (producto) => {
-    let productoLocal = JSON.parse(localStorage.getItem('producto'));
-    let productoActualizado = {
-        producto:[
-            productoLocal,
-            producto
-        ]
-    }
-    localStorage.setItem('producto', JSON.stringify(productoActualizado))
+const updateProducto = (newProducto) => {
+    let producto = JSON.parse(localStorage.getItem('producto'));
+    producto.push(newProducto);
+    localStorage.setItem('producto', JSON.stringify(producto))
     alert('Producto Guardado con exito.');
     return;
 }
