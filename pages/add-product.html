@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../src/css/homepage.css">
+    <link rel="stylesheet" href="../src/css/add-product.css">
+    <title>Gastos Sintaceptes</title>
+</head>
+
+<body>
+    <h1
+    class="titles">Agregar Productos</h1>
+    <div class="container">
+        <form submit="" class="formulario">
+            <input type="number"
+                   id="codigoBarras"
+                   placeholder="Codigo de barras"
+                   class="form-control">
+            <input type="text"
+                   id="nombreProducto"
+                   placeholder="Nombre Producto"
+                   class="form-control">
+            <textarea type="text"
+                   id="descripcionProducto"
+                   placeholder="Descripcion del producto"
+                   rows="4"
+                   class="form-control"></textarea>
+            <input type="number"
+                   id="precioProducto"
+                   placeholder="Precio Producto"
+                   class="form-control">
+            <input type="number"
+                   id="costoProducto"
+                   placeholder="Costo Producto"
+                   class="form-control">
+
+            <button type="submit" onclick="save()">Guardar</button>
+        </form>
+    </div>
+    <script src="../src/js/add-functions.js"></script>
+</body>
+
+</html>
