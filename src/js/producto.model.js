@@ -1,4 +1,5 @@
 class Producto {
+    id = "";
     codigoBarras = "";
     nombreProducto = "";
     descripcionProducto = "";

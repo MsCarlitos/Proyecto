@@ -1,3 +1,5 @@
+"use strict";
+
 let Producto = window.Producto;
 
 const save = () => {
@@ -9,6 +11,7 @@ const save = () => {
     let producto = Producto;
 
     producto = {
+        id: new Date().getTime(),
         codigoBarras: codigoBarras,
         nombreProducto: nombreProducto,
         descripcionProducto: descripcionProducto,
@@ -29,6 +32,7 @@ const save = () => {
 const updateProducto = (newProducto) => {
     let producto = JSON.parse(localStorage.getItem('producto'));
     producto.push(newProducto);
+
     localStorage.setItem('producto', JSON.stringify(producto))
     alert('Producto Guardado con exito.');
     return;
